@@ -21,13 +21,15 @@
                 
             }
             create() {
+                //images
                 let bg = this.add.image(0, 0, 'bg').setScale(2);
                 let title_text = this.add.image(400, 100, 'title').setScale(1);
                 let fairy = this.add.image(200, 100, 'fairy').setScale(1);
                 let fairy2 = this.add.image(600, 100, 'fairy').setScale(1);
                 let rolypoly = this.add.image(400, 500, 'rolypoly').setScale(1);
-                let snail = this.add.image(0, 0, 'snail').setScale(1);
-
+                let snail = this.add.image(100, 500, 'snail').setScale(1);
+                //
+                let check_val = 0;
                 this.input.on('pointerdown', () => this.scene.start('victory'));
             }
         }
