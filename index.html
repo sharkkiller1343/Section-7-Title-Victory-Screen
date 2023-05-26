@@ -14,9 +14,14 @@
             preload() {
                 this.load.path = './assets/';
                 this.load.image('bg', 'S7_BG.png');
+                this.load.image('title', 'Title_Text.png');
+                this.load.image('fairy', 'Title_Text.png');
+                this.load.image('rolypoly', 'Title_Text.png');
+                this.load.image('snail', 'Title_Text.png');
+                
             }
             create() {
-                let bg = this.add.image(0, 0, 'bg');
+                let bg = this.add.image(0, 0, 'bg').setScale(2);
                 this.input.on('pointerdown', () => this.scene.start('victory'));
             }
         }
